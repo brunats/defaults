@@ -1,4 +1,5 @@
 sudo pacman -Sy
+sudo pacman -S bash-completion
 sudo pacman -S git
 sudo pacman -S snapd
 sudo pacman -S docker
