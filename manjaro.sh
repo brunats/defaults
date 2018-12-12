@@ -5,8 +5,6 @@ sudo pacman -S snapd
 sudo pacman -S docker
 sudo pacman -S docker-compose
 sudo pacman -S cmake
-sudo pacman -S yay
-
 
 # Enable snapd and docker socket
 sudo systemctl enable --now snapd.socket
@@ -36,12 +34,7 @@ gvm install go1.11
 go use 1.11
 
 #Install Java
-yay jdk # Select 24, and Yes
-archlinux-java status
-sudo archlinux-java set java-10-jdk/jre
-sudo archlinux-java fix
-java -version
-
+sudo pacman -S jre-openjdk
 
 # Atom packages
 apm install minimap
