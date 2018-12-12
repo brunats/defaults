@@ -10,3 +10,6 @@ sudo ln -s /var/lib/snapd/snap /snap
 sudo snap install spotify
 sudo snap install slack --classic
 sudo snap install atom --classic
+
+# Generate SSH Key for github
+ssh-keygen
