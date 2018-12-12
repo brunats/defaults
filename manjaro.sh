@@ -6,8 +6,9 @@ sudo pacman -S docker-compose
 sudo pacman -S cmake
 
 
-# Enable snapd socket
+# Enable snapd and docker socket
 sudo systemctl enable --now snapd.socket
+sudo systemctl enable --now docker.socket
 # Enable snapd --classic flag
 sudo ln -s /var/lib/snapd/snap /snap
 
