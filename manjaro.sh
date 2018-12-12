@@ -3,6 +3,8 @@ sudo pacman -S git
 sudo pacman -S snapd
 sudo pacman -S docker
 sudo pacman -S docker-compose
+sudo pacman -S cmake
+
 
 # Enable snapd socket
 sudo systemctl enable --now snapd.socket
@@ -21,12 +23,21 @@ gpg --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB8
 rvm install 2.5.3
 rvm use 2.5.3
 
+gem install bundler
+
 # GVM
 bash < <(curl -s -S -L https://raw.githubusercontent.com/moovweb/gvm/master/binscripts/gvm-installer)
 
 # Install Go 1.11
 gvm install go1.11
 go use 1.11
+
+# Atom packages
+apm install minimap
+apm install firacode
+apm install go-plus
+apm install file-icons
+
 
 # Generate SSH Key for github
 ssh-keygen
