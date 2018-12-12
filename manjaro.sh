@@ -33,6 +33,15 @@ bash < <(curl -s -S -L https://raw.githubusercontent.com/moovweb/gvm/master/bins
 gvm install go1.11
 go use 1.11
 
+# Install Python
+git clone https://aur.archlinux.org/pyenv.git
+cd pyenv
+makepkg -Acs
+sudo pacman -U *.pkg.tar.xz
+cd
+rm -rf pyenv
+pyenv install 3.6.7
+
 #Install Java
 sudo pacman -S jre-openjdk
 
