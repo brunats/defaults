@@ -19,6 +19,14 @@ gpg --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB8
 
 # Install Ruby versions
 rvm install 2.5.3
+rvm use 2.5.3
+
+# GVM
+bash < <(curl -s -S -L https://raw.githubusercontent.com/moovweb/gvm/master/binscripts/gvm-installer)
+
+# Install Go 1.11
+gvm install go1.11
+go use 1.11
 
 # Generate SSH Key for github
 ssh-keygen
