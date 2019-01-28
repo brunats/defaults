@@ -7,6 +7,7 @@ sudo pacman -S docker-compose
 sudo pacman -S cmake
 sudo pacman -S postgresql-libs
 sudo pacman -S net-tools
+sudo pacman -S vim
 
 # Enable snapd and docker socket
 sudo systemctl enable --now snapd.socket
