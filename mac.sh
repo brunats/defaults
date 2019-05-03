@@ -21,3 +21,15 @@ export PKG_CONFIG_PATH="${PKG_CONFIG_PATH} /usr/local/opt/zlib/lib/pkgconfig"
 # Python 2 e 3
 brew install python
 brew install python3
+
+# Postgresql
+brew install postgresql
+
+# RVM
+\curl -sSL https://get.rvm.io | bash
+
+# Ruby
+rvm install ruby
+
+# Bundler
+gem install bundler
