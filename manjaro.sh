@@ -8,6 +8,8 @@ sudo pacman -S cmake
 sudo pacman -S postgresql-libs
 sudo pacman -S net-tools
 sudo pacman -S vim
+sudo pacman -S gconf ## package for reacte native - vscode and slack use
+
 
 # Enable snapd and docker socket
 sudo systemctl enable --now snapd.socket
