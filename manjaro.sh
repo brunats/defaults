@@ -67,3 +67,12 @@ setterm bfreq 0
 # Disable KDE BEEP
 xset b 0
 xset b off
+
+# Install chrome
+git clone https://aur.archlinux.org/google-chrome.git
+cd google-chrome/
+makepkg -s
+ls *.xz ## resposta ~ google-chrome-70.0.3538.77-1-x86_64.pkg.tar.xz
+sudo pacman -U --noconfirm RESPOSTA_DO_COMANDO_ANTERIOR
+cd ..
+rm -rf google-chrome
