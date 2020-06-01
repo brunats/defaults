@@ -35,8 +35,8 @@ gem install bundler
 bash < <(curl -s -S -L https://raw.githubusercontent.com/moovweb/gvm/master/binscripts/gvm-installer)
 
 # Install Go 1.11
-gvm install go1.11 -B
-gvm use go1.11
+gvm install go1.14 -B
+gvm use go1.14
 
 # Install Python
 git clone https://aur.archlinux.org/pyenv.git
