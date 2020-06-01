@@ -22,12 +22,12 @@ sudo snap install atom --classic
 sudo snap install skype --classic
 
 # RVM
-gpg --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3 7D2BAF1CF37B13E2069D6956105BD0E739499BDB
+gpg --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3 7D2BAF1CF37B13E2069D6956105BD0E739499
 \curl -sSL https://get.rvm.io | bash -s stable
 
 # Install Ruby versions
-rvm install 2.5.3
-rvm use 2.5.3
+rvm install 2.7.1
+rvm use 2.7.1
 
 gem install bundler
 
@@ -68,6 +68,7 @@ setterm bfreq 0
 xset b 0
 xset b off
 
+
 # Install chrome
 git clone https://aur.archlinux.org/google-chrome.git
 cd google-chrome/
@@ -76,3 +77,7 @@ ls *.xz ## resposta ~ google-chrome-70.0.3538.77-1-x86_64.pkg.tar.xz
 sudo pacman -U --noconfirm RESPOSTA_DO_COMANDO_ANTERIOR
 cd ..
 rm -rf google-chrome
+
+
+## Install VSC
+sudo snap install code --classic
