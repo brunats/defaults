@@ -18,6 +18,8 @@ git config --global user.signingkey "USER_SIGNINGKEY"
 # Docker
 sudo apt-get install docker
 sudo apt-get install docker-compose
+sudo groupadd docker
+sudo usermod -aG docker ${USER}
 
 # ASDF
 git clone https://github.com/asdf-vm/asdf.git ~/.asdf --branch v0.8.0
@@ -39,5 +41,3 @@ asdf global 15.11.0
 sudo snap install spotify
 sudo snap install slack --classic
 sudo snap install discord
-
-
