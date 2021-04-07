@@ -21,6 +21,14 @@ sudo apt-get install docker-compose
 sudo groupadd docker
 sudo usermod -aG docker ${USER}
 
+# Peek
+sudo add-apt-repository ppa:peek-developers/stable
+sudo apt update
+sudo apt install peek
+
+# Pinta
+sudo apt-get install pinta
+
 # ASDF
 git clone https://github.com/asdf-vm/asdf.git ~/.asdf --branch v0.8.0
 
@@ -36,6 +44,11 @@ bash -c '${ASDF_DATA_DIR:=$HOME/.asdf}/plugins/nodejs/bin/import-release-team-ke
 asdf install nodejs latest
 asdf list nodejs
 asdf global 15.11.0
+
+# Python
+sudo apt-get update
+sudo apt-get install python3.8
+sudo apt install python3-venv python3-pip
 
 # Spotify Slack Discord
 sudo snap install spotify
